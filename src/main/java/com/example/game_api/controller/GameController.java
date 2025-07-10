@@ -26,5 +26,10 @@ public class GameController {
         gameLoopService.joinRoom(roomId, player);
         return ResponseEntity.ok("Joined");
     }
+
+    @GetMapping("/welcome")
+    public String welcome(){
+        return "welcome";
+    }
 }
 
